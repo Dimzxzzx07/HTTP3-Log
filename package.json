@@ -1,0 +1,67 @@
+{
+  "name": "http3-log",
+  "version": "1.0.0",
+  "description": "Enterprise-grade high performance log parser and analyzer for HTTP/3, QUIC, and modern web servers",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "h3-log": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/cli.js",
+    "dev": "ts-node src/cli.ts",
+    "clean": "rm -rf dist",
+    "lint": "eslint . --ext .ts"
+  },
+  "keywords": [
+    "http3",
+    "quic",
+    "log-parser",
+    "log-analyzer",
+    "nginx-logs",
+    "caddy-logs",
+    "litespeed",
+    "cloudflare-logs",
+    "clickhouse",
+    "elasticsearch",
+    "geoip",
+    "security-audit",
+    "anomaly-detection",
+    "observability",
+    "monitoring",
+    "real-time-logs",
+    "syslog-parser"
+  ],
+  "author": "Dimzxzzx07",
+  "license": "MIT",
+  "dependencies": {
+    "winston": "^3.11.0",
+    "clickhouse": "^2.6.0",
+    "@elastic/elasticsearch": "^8.11.0",
+    "maxmind": "^4.3.0",
+    "ua-parser-js": "^1.0.37",
+    "yaml": "^2.3.4",
+    "commander": "^11.1.0",
+    "chokidar": "^3.5.3",
+    "through2": "^4.0.2",
+    "node-cron": "^3.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@types/through2": "^2.0.41",
+    "@types/node-cron": "^3.0.11",
+    "@types/ua-parser-js": "^0.7.39",
+    "typescript": "^5.3.0",
+    "ts-node": "^10.9.2",
+    "blessed": "^0.1.81",
+    "@types/blessed": "^0.1.25"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Dimzxzzx07/HTTP3-Log.git"
+  }
+}

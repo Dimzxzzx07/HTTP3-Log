@@ -1,0 +1,56 @@
+Terms of Service
+
+Please read these Terms of Service carefully before using HTTP3-Log.
+
+1. Acceptance of Terms
+
+By downloading, installing, or using HTTP3-Log (the "Software"), you agree to be bound by these Terms of Service.
+
+1. Intended Use
+
+HTTP3-Log is designed for legitimate purposes including:
+
+· Aggregating and analyzing logs from your own web servers
+· Monitoring traffic on infrastructure you own or manage
+· Detecting anomalies and security issues in your applications
+· Debugging performance problems in your HTTP/3, HTTP/2, and HTTP/1.1 servers
+· Generating reports and analytics for your own systems
+
+1. Prohibited Uses
+
+You agree NOT to use HTTP3-Log for:
+
+· Processing logs from systems you do not own or have permission to monitor
+· Storing or analyzing sensitive personal data without proper consent
+· Any activity that violates data protection laws (GDPR, CCPA, etc)
+· Attacking or probing third-party services
+· Bypassing security controls or access restrictions
+
+1. Responsibility and Liability
+
+THE AUTHOR PROVIDES THIS SOFTWARE "AS IS" WITHOUT WARRANTIES. YOU BEAR FULL RESPONSIBILITY FOR YOUR ACTIONS. THE AUTHOR IS NOT LIABLE FOR ANY DAMAGES, LEGAL CONSEQUENCES, OR ANY OTHER OUTCOMES RESULTING FROM YOUR USE.
+
+1. Legal Compliance
+
+You agree to comply with all applicable laws in your jurisdiction regarding log collection, data processing, and privacy. This includes but is not limited to:
+
+· General Data Protection Regulation (GDPR) in the EU
+· California Consumer Privacy Act (CCPA) in the US
+· Personal Data Protection Act (PDPA) in Singapore
+· Local data retention and privacy laws
+
+1. Data Privacy
+
+HTTP3-Log does not send your data to external services unless you configure webhook alerts. All logs remain on your infrastructure. You are responsible for securing your database and ensuring compliance with privacy regulations.
+
+1. No Warranty
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT.
+
+1. Indemnification
+
+You agree to indemnify and hold the Author harmless from any claims arising from your use of the Software.
+
+1. Ethical Reminder
+
+I built HTTP3-Log to help developers monitor their own infrastructure and debug web server issues. Please use this tool responsibly. Only process logs from systems you own or have permission to monitor. Respect user privacy and data protection laws. If you choose to misuse this tool, you alone bear the consequences.

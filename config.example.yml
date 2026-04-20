@@ -1,0 +1,26 @@
+input:
+  - type: udp
+    port: 5140
+    format: nginx_json
+  - type: file
+    path: /var/log/caddy/access.log
+    format: caddy_json
+  - type: syslog
+    port: 5514
+    format: combined
+
+output:
+  type: clickhouse
+  host: localhost
+  table: h3_logs
+
+enrichment:
+  geoip: true
+  userAgent: true
+  anomalyAlert: true
+
+anomaly:
+  threshold: 1000
+  timeWindow: 60
+  statusCodes: [403, 404, 500]
+  alertWebhook: https://your-webhook-url

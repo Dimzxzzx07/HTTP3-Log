@@ -1,0 +1,7 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.haproxyPatterns = void 0;
+exports.haproxyPatterns = {
+    httplog: /^(?<date>[^ ]+) (?<time>[^ ]+) (?<hostname>\S+) haproxy\[(?<pid>\d+)\]: (?<clientIp>\S+):(?<clientPort>\d+) \[(?<acceptDate>[^\]]+)\] (?<frontend>\S+) (?<backend>\S+)\/(?<server>\S+) (?<timeRequest>\d+)\/(?<timeQueue>\d+)\/(?<timeConnect>\d+)\/(?<timeResponse>\d+)\/(?<timeTotal>\d+) (?<statusCode>\d{3}) (?<bytesRead>\d+) (?<capturedCookies>[^ ]+) (?<capturedHeaders>[^ ]+) "(?<httpMethod>\S+) (?<httpUri>[^ ]+) (?<httpVersion>\S+)"$/,
+    tcplog: /^(?<date>[^ ]+) (?<time>[^ ]+) (?<hostname>\S+) haproxy\[(?<pid>\d+)\]: (?<clientIp>\S+):(?<clientPort>\d+) \[(?<acceptDate>[^\]]+)\] (?<frontend>\S+) (?<backend>\S+)\/(?<server>\S+) (?<timeQueue>\d+)\/(?<timeConnect>\d+)\/(?<timeTotal>\d+) (?<statusCode>\d+) (?<bytesRead>\d+)$/
+};
